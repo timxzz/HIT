@@ -7,6 +7,8 @@
 <br>
 <br>
 
+We propose a _Hierarchical Information Trading (HIT)_ framework for VAEs. Please see our paper for details.
+
 ### Environment: 
 
 Python 3.8.11;
