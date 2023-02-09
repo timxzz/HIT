@@ -1,21 +1,36 @@
 # Trading Information between Latents in Hierarchical Variational Autoencoders [(ICLR 2023)](https://openreview.net/forum?id=eWtMdr6yCmL)
 
 <div align="center">
+
+  [![arxiv-link](https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red)](https://openreview.net/forum?id=eWtMdr6yCmL)
+  [![made-with-pytorch](https://img.shields.io/badge/Made%20with-PyTorch-brightgreen)](https://pytorch.org/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
   <a href="http://timx.me" target="_blank">Tim&nbsp;Z.&nbsp;Xiao</a> &emsp; <b>&middot;</b> &emsp;
   <a href="https://robamler.github.io" target="_blank">Robert&nbsp;Bamler</a> 
 </div>
-<br>
+
+<div align="center">
+
+**Table of Contents**: - <a href="#training">Training</a> - <a href="#evaluation">Evaluation</a> - <a href="#citation">Citation</a> -
+
+</div>
 <br>
 
-We propose a _Hierarchical Information Trading (HIT)_ framework for VAEs. Please see our paper for details.
+## About The Project
+This is the official github repository for our work [Trading Information between Latents in Hierarchical Variational Autoencoders](https://openreview.net/forum?id=eWtMdr6yCmL), where we propose a _Hierarchical Information Trading (HIT)_ framework for VAEs.
 
-### Environment: 
+> **Abstract**
+>
+> Variational Autoencoders (VAEs) were originally motivated (Kingma & Welling, 2014) as probabilistic generative models in which one performs approximate Bayesian inference. The proposal of $\beta$-VAEs (Higgins et al., 2017) breaks this interpretation and generalizes VAEs to application domains beyond generative modeling (e.g., representation learning, clustering, or lossy data compression) by introducing an objective function that allows practitioners to trade off between the information content ("bit rate") of the latent representation and the distortion of reconstructed data (Alemi et al., 2018). In this paper, we reconsider this rate/distortion trade-off in the context of hierarchical VAEs, i.e., VAEs with more than one layer of latent variables. We identify a general class of inference models for which one can split the rate into contributions from each layer, which can then be tuned independently. We derive theoretical bounds on the performance of downstream tasks as functions of the individual layers' rates and verify our theoretical findings in large-scale experiments. Our results provide guidance for practitioners on which region in rate-space to target for a given application.
+
+## Environment: 
 
 Python 3.8.11;
 Other dependencies are in `requirements.txt`
 
 
-### Training
+## Training
 
 Example training command:
 ```bash
@@ -35,7 +50,9 @@ python train.py \
 --run_batch_name <run_batch_name> \
 ```
 
-### Evaluation
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Evaluation
 Involve 4 separate steps (also need to train classifier for measuring inception score):
 
 #### 1.
@@ -60,13 +77,15 @@ python eval_beta_grid.py --get_mi_cal_acc --cpu_n <num_cpu> --run_batch_name <ru
 python eval_beta_grid.py --run_batch_name <run_batch_name> --recons_acc
 ```
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## License
-MIT OR Apache-2.0 OR BSL-1.0
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-## Bibtex:
-If you would like to cite our paper, following is the Bibtex:
+## Citation:
+Following is the Bibtex if you would like to cite our paper :
 
-```
+```bibtex
 @inproceedings{xiao2023trading,
   title={Trading Information between Latents in Hierarchical Variational Autoencoders},
   author={Xiao, Tim Z. and Bamler, Robert},
@@ -74,3 +93,5 @@ If you would like to cite our paper, following is the Bibtex:
   year={2023}
 }
 ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
