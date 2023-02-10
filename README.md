@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  [![arxiv-link](https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red)](https://openreview.net/forum?id=eWtMdr6yCmL)
+  [![arxiv-link](https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red)](http://arxiv.org/abs/2302.04855)
   [![made-with-pytorch](https://img.shields.io/badge/Made%20with-PyTorch-brightgreen)](https://pytorch.org/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -18,7 +18,7 @@
 <br>
 
 ## About The Project
-This is the official github repository for our work [Trading Information between Latents in Hierarchical Variational Autoencoders](https://openreview.net/forum?id=eWtMdr6yCmL), where we propose a _Hierarchical Information Trading (HIT)_ framework for VAEs.
+This is the official github repository for our work [Trading Information between Latents in Hierarchical Variational Autoencoders](http://arxiv.org/abs/2302.04855), where we propose a _Hierarchical Information Trading (HIT)_ framework for VAEs.
 
 > **Abstract**
 >
